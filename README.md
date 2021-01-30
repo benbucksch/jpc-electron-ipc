@@ -1,4 +1,4 @@
-# jpc-ws - Remote procedure calls between JS objects over the Electron IPC mechanism
+# jpc-electron-ipc - Remote procedure calls between JS objects over the Electron IPC mechanism
 
 jpc allows you to call JS objects in other processes. From your JS objects, it automatically
 creates an API that resembles your object API, just with an `await` in front of every call.
