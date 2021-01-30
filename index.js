@@ -1,2 +1,3 @@
-export * from "main.js";
-export * from "renderer.js";
+import JPCMainProcess from "./main.js";
+import JPCRendererProcess from "./renderer.js";
+export { JPCMainProcess, JPCRendererProcess };
