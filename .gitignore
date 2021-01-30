@@ -1,0 +1,6 @@
+*~
+*.kate-swp
+*.sh
+node_modules/
+yarn.lock
+packages-lock.json

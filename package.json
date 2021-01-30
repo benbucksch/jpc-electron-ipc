@@ -1,0 +1,33 @@
+{
+  "name": "jpc-electron-ipc",
+  "version": "0.1.0",
+  "description": "Allows remote procedure calls between JS objects over Electron's IPC mechanism",
+  "dependencies": {
+    "electron": "^11.2.1",
+    "jpc": "https://github.com/benbucksch/jpc/",
+    "ws": "^7.4.2"
+  },
+  "devDependencies": {},
+  "type": "module",
+  "scripts": {
+    "test": "node test-server.js & sleep 1 && node test-client.js"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benbucksch/jpc-electron-ipc.git"
+  },
+  "keywords": [
+    "rpc",
+    "ipc",
+    "remote",
+    "corba",
+    "electron"
+  ],
+  "author": "Ben Bucksch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benbucksch/jpc/issues"
+  },
+  "homepage": "https://github.com/benbucksch/jpc-electron-ipc#readme"
+}
