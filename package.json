@@ -1,6 +1,6 @@
 {
   "name": "jpc-electron-ipc",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Allows remote procedure calls between JS objects over Electron's IPC mechanism",
   "dependencies": {
     "electron": "^11.2.1",
