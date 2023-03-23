@@ -1,7 +1,7 @@
 import { ipcRenderer } from "electron";
-import JPCProtocol from "jpc/protocol.js";
-import MessageCall from "jpc/message.js";
-import { assert } from "jpc/util.js";
+import JPCProtocol from "jpc-core/protocol.js";
+import MessageCall from "jpc-core/message.js";
+import { assert } from "jpc-core/util.js";
 
 /**
  * Wire protocol API
@@ -61,7 +61,7 @@ class Renderer extends MessageCall {
   }
 
   send(message) {
-    let msgType = typeof(message.success) == "boolean" ? "asynchronous-reply" : "asynchronous-message";
+    let msgType = typeof (message.success) == "boolean" ? "asynchronous-reply" : "asynchronous-message";
     ipcRenderer.send(msgType, message);
   }
 
@@ -76,8 +76,8 @@ class Renderer extends MessageCall {
    * @param {Promise} waits until the call returns with a result or Exception
    */
   async makeCall(path, arg) {
-    assert(path && typeof(path) == "string");
-    assert(!arg || typeof(arg) == "object");
+    assert(path && typeof (path) == "string");
+    assert(!arg || typeof (arg) == "object");
     return await ipcRenderer.invoke("jpc", {
       path: path,
       arg: arg,

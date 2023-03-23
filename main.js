@@ -1,7 +1,7 @@
 import { ipcMain } from "electron";
-import JPCProtocol from "jpc/protocol.js";
-import MessageCall from "jpc/message.js";
-import { assert } from "jpc/util.js";
+import JPCProtocol from "jpc-core/protocol.js";
+import MessageCall from "jpc-core/message.js";
+import { assert } from "jpc-core/util.js";
 
 /**
  * Wire protocol API
@@ -62,7 +62,7 @@ class Main extends MessageCall {
   }
 
   send(message) {
-    let msgType = typeof(message.success) == "boolean" ? "asynchronous-reply" : "asynchronous-message";
+    let msgType = typeof (message.success) == "boolean" ? "asynchronous-reply" : "asynchronous-message";
     ipcMain.send(msgType, message);
   }
 
