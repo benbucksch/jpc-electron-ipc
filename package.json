@@ -4,8 +4,7 @@
   "description": "Allows remote procedure calls between JS objects over Electron's IPC mechanism",
   "dependencies": {
     "electron": "^11.2.1",
-    "jpc-core": "^0.2.0",
-    "ws": "^8.13.0"
+    "jpc-core": "^0.2.0"
   },
   "devDependencies": {},
   "scripts": {
